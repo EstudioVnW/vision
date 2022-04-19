@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "SF Pro Bold";
+  src: url(../Fonts/FontsFree-Net-SFProText-Bold-1.ttf);
+}
+
+@font-face {
+  font-family: "SF Pro Regular";
+  src: url(../Fonts/FontsFree-Net-SFProText-Regular-1.ttf);
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -9,9 +19,10 @@ body {
   box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 /* RESET */
@@ -21,7 +32,7 @@ del, dfn, em, img, small, strike, sub, sup,
 center, ol, ul, li, fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, figure, figcaption, footer, header, hgroup, 
-menu, nav, section {
+menu, nav, section, button {
 	margin: 0;
 	padding: 0;
 	border: 0;

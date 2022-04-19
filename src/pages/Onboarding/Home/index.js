@@ -1,8 +1,17 @@
+import React from "react";
+
+//Component
+import Bemvindo from "../../../components/BoxBalloon";
+import Background from "../../../components/Background";
+
+import * as S from "./styles";
+
 function Home() {
   return (
-   <div>
-    <p>Home</p>
-   </div>
+    <S.ContainerWrapper>
+      <Bemvindo />
+      <Background />
+    </S.ContainerWrapper>
   );
 }
 

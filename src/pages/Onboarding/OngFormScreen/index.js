@@ -1,5 +1,5 @@
 //Components
-import Header from '../../../components/Header/Button';
+import Header from '../../../components/Header';
 import Title from '../../../components/Title';
 
 import * as S from './styles';

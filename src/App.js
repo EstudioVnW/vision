@@ -1,3 +1,4 @@
+import Home from './pages/Onboarding/Home';
 import OngFormScreen from './pages/Onboarding/OngFormScreen';
 
 function App() {
