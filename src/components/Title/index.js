@@ -1,6 +1,6 @@
 import * as S from "./styles";
 
-const HeaderTitle = () => {
+const Title = () => {
   return (
     <>
       <S.Title>Faça parte da nossa equipe</S.Title>
@@ -8,4 +8,5 @@ const HeaderTitle = () => {
     </>
   );
 };
-export default HeaderTitle;
+
+export default Title;
