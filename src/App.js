@@ -1,9 +1,14 @@
+import React from "react";
+import Bemvindo from "./components/BoxBalloon";
+import Background from "./components/Background";
+import * as S from "./Global";
 
 function App() {
   return (
-   <div>
-     <p>vision</p>
-   </div>
+    <S.ContainerWrapper>
+      <Bemvindo />
+      <Background />
+    </S.ContainerWrapper>
   );
 }
 
