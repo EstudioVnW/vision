@@ -1,14 +1,11 @@
-import React from "react";
-import Bemvindo from "./components/BoxBalloon";
-import Background from "./components/Background";
-import * as S from "./Global";
+import Home from './pages/Onboarding/Home';
+import OngFormScreen from './pages/Onboarding/OngFormScreen';
 
 function App() {
   return (
-    <S.ContainerWrapper>
-      <Bemvindo />
-      <Background />
-    </S.ContainerWrapper>
+   <div>
+    <OngFormScreen/>
+   </div>
   );
 }
 
