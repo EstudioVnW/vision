@@ -9,13 +9,14 @@ export const Container = styled.div`
 
 export const BoxOne = styled.div`
   display: flex;
-  background-color: white;
+  background-color: #fff;
   display: flex;
   flex-wrap: wrap;
-  border-radius: 15px 15px 0 15px;
+  border-radius: 40px 40px 0 40px;
   width: 76vh;
   margin-top: 1rem;
   padding: 1.5rem;
+  padding-bottom: 3rem;
   border: 5px solid transparent;
   background: linear-gradient(to right, white, white),
     linear-gradient(to right, #fff, #98fb98);
@@ -31,7 +32,7 @@ export const BoxTwo = styled.div`
   border: 2px solid green;
   flex-wrap: wrap;
   padding: 1.5rem;
-  border-radius: 15px 15px 0 15px;
+  border-radius: 40px 40px 0 40px;
   margin-top: 1rem;
   border: 5px solid transparent;
   background: linear-gradient(to right, white, white),
@@ -47,7 +48,7 @@ export const Boxthree = styled.div`
   border: 2px solid green;
   flex-wrap: wrap;
   padding: 1.5rem;
-  border-radius: 15px 15px 0 15px;
+  border-radius: 40px 40px 0 40px;
   width: 76vh;
   margin-top: 1rem;
   border: 5px solid transparent;
@@ -59,7 +60,9 @@ export const Boxthree = styled.div`
 
 export const Paragraph = styled.p`
   font-size: 3.4vh;
-  font-family: "SF Pro Text", bold;
+  font-family: "SF Pro Regular";
+  font-weight: bold;
+  font-style: normal;
   a {
     text-decoration: none;
     color: blue;
@@ -69,20 +72,25 @@ export const Paragraph = styled.p`
 export const BoxButton = styled.div`
   width: 100%;
   margin-top: 2rem;
-  margin-left: 6vw;
+  margin-left: 10vw;
   display: flex;
   justify-content: center;
 `;
 
 export const BtnCadastro = styled.button`
-  border-radius: 100px;
-  background-color: #4682b4;
+  border-radius: 56px;
+  background-color: #2c5fa1;
   color: #fff;
   border: none;
   width: 16vw;
-  padding: 0 4rem 0 4rem;
-  font-size: 35px;
+  padding: 1rem;
+  /* padding: 0 4rem 0 4rem; */
+  font-size: 30px;
   display: flex;
-  flex-wrap: wrap;
   cursor: pointer;
+  font-family: "Sf Pro Regular";
+  text-transform: uppercase;
+  line-height: 36px;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
 `;

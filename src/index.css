@@ -1,6 +1,11 @@
 @font-face {
-  font-family: "SF Pro Text";
+  font-family: "SF Pro Bold";
   src: url(../Fonts/FontsFree-Net-SFProText-Bold-1.ttf);
+}
+
+@font-face {
+  font-family: "SF Pro Regular";
+  src: url(../Fonts/FontsFree-Net-SFProText-Regular-1.ttf);
 }
 
 * {
