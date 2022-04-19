@@ -84,4 +84,5 @@ export const BtnCadastro = styled.button`
   font-size: 35px;
   display: flex;
   flex-wrap: wrap;
+  cursor: pointer;
 `;
