@@ -1,10 +1,10 @@
-import Home from './pages/Onboarding/Home';
-import OngFormScreen from './pages/Onboarding/OngFormScreen';
-
+import Header from './components/Header'
+import InputRadio from './components/Inputs/inputRadio';
 function App() {
   return (
    <div>
-    <OngFormScreen/>
+   <Header/>
+   <InputRadio/>
    </div>
   );
 }
