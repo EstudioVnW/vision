@@ -1,8 +1,9 @@
-import Header from './components/header/Button'
+import OngFormScreen from './pages/Onboarding/OngFormScreen';
+
 function App() {
   return (
    <div>
-   <Header/>
+    <OngFormScreen/>
    </div>
   );
 }
