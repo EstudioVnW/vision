@@ -1,27 +1,21 @@
 import styled from "styled-components";
 
-export const Logo = styled.img`
-  width: 170px;
-`;
-
-export const Btn = styled.a`
-  color: blue;
-  text-decoration: none;
-  padding: 2px;
-`;
-
-export const Container = styled.div`
-  max-width: 1333px;
-  margin: 0 auto;
+export const ContainerButton = styled.div`
+  width: 100px;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-`;
+  justify-content: center;
 
-export const HeaderContainer = styled.div`
-  width: 100%;
-  display: flex;
-  align-items:center;
-  padding-left: 5px;
-  
+  img {
+    width: 20px;
+  }
+
+  button {
+    color: blue;
+    background-color: #fff;
+    border: none;
+    padding: 2px;
+    font-size: 20px;
+    cursor: pointer;
+    
+  }
 `;

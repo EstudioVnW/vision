@@ -1,14 +1,13 @@
 import * as S from "./style";
-import  Logo  from "../../../assets/logo.svg";
-const Header = () => {
+import  Seta  from "../../../assets/voltar.svg";
+const Button = () => {
   return (
-    <S.HeaderContainer>
-      <S.Btn href="/">Voltar</S.Btn>
-      <S.Container>
-        <S.Logo src={Logo} />
-        
-      </S.Container>
-    </S.HeaderContainer>
+    <S.ContainerButton>
+      <img alt="Seta" src={Seta}/>
+      <button type="button" href="/">
+        Voltar
+      </button>
+    </S.ContainerButton>
   );
 };
-export default Header;
+export default Button;
