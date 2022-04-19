@@ -1,14 +1,11 @@
-import React from "react";
-import Bemvindo from "./components/BoxBalloon";
-import Background from "./components/Background";
-import * as S from "./Global";
-
+import Header from './components/Header'
+import InputRadio from './components/Inputs/inputRadio';
 function App() {
   return (
-    <S.ContainerWrapper>
-      <Bemvindo />
-      <Background />
-    </S.ContainerWrapper>
+   <div>
+   <Header/>
+   <InputRadio/>
+   </div>
   );
 }
 
