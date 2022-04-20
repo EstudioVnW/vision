@@ -1,7 +1,17 @@
 import React from "react";
+
+import { useHistory } from "react-router-dom";
+
 import * as S from "./styles";
 
+
 export default function BemVindo() {
+  const history = useHistory();
+  
+  const handleClick = () => {
+    history.push('/cadastro-da-organizacao');
+  };
+
   return (
     <S.Container>
       <S.BoxOne>
@@ -28,7 +38,7 @@ export default function BemVindo() {
         </S.Paragraph>
       </S.BoxOne>
       <S.BoxButton>
-        <S.BtnCadastro>Iniciar cadastro</S.BtnCadastro>
+        <S.BtnCadastro onClick={handleClick}>Iniciar cadastro</S.BtnCadastro>
       </S.BoxButton>
     </S.Container>
   );
