@@ -6,12 +6,12 @@ import Background from "../../../components/Background";
 
 import * as S from "./styles";
 
-function Home() {
+const Home = () => {
   return (
-    <S.ContainerWrapper>
+    <S.Container>
       <Bemvindo />
       <Background />
-    </S.ContainerWrapper>
+    </S.Container>
   );
 }
 

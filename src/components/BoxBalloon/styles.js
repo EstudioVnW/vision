@@ -4,10 +4,7 @@ export const Container = styled.div`
   width: 100vw;
   margin-left: 10vw;
   margin-top: 3vw;
-  height: 35vw;
-  background-image: url('../../assets/backg.png');
-  background-repeat: no-repeat;
-  background-size: cover;
+  height: 35vh;
 `;
 
 export const BoxOne = styled.div`
