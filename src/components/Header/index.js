@@ -1,16 +1,17 @@
 import * as S from "./styles";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 
 //Images
 import  Seta  from "../../assets/voltar.svg";
 import  Logo  from "../../assets/logo.svg";
 
 const Header = () => {
-  const history = useHistory();
-
+  const navigate = useNavigate();
+  
   const handleGoBack = () => {
-    history.goBack();
-  }
+    console.log('handleClick');
+    navigate(-1);
+  };
 
   return (
     <S.HeaderContainer>

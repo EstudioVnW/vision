@@ -1,15 +1,15 @@
 import React from "react";
+import { useNavigate } from 'react-router-dom';
 
-import { useHistory } from "react-router-dom";
-
+//Styles
 import * as S from "./styles";
 
-
 export default function BemVindo() {
-  const history = useHistory();
+  const navigate = useNavigate();
   
   const handleClick = () => {
-    history.push('/cadastro-da-organizacao');
+    console.log('handleClick');
+    navigate('/cadastro-da-organizacao');
   };
 
   return (
