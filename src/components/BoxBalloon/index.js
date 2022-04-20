@@ -1,8 +1,6 @@
 import React from "react";
 import * as S from "./styles";
 
-import "./style.css";
-
 export default function BemVindo() {
   return (
     <S.Container>

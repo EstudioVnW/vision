@@ -1,17 +1,19 @@
 //Components
 import Header from '../../../components/Header';
 import Title from '../../../components/Title';
+import InputRadio from '../../../components/Inputs/inputRadio';
 
 import * as S from './styles';
 
-function OngFormScreen() {
+const OngFormScreen = () => {
   return (
-    <div>
+    <>
       <Header/>
       <S.Main>
         <Title />
+        <InputRadio/>
       </S.Main>
-    </div>
+    </>
   );
 }
 

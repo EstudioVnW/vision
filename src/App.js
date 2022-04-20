@@ -1,11 +1,9 @@
-import Header from './components/Header'
-import InputRadio from './components/Inputs/inputRadio';
-function App() {
+import OngFormScreen from './pages/Onboarding/OngFormScreen';
+import Home from './pages/Onboarding/Home';
+
+const App = () => {
   return (
-   <div>
-   <Header/>
-   <InputRadio/>
-   </div>
+    <OngFormScreen />
   );
 }
 
