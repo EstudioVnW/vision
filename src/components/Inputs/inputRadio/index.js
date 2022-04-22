@@ -1,19 +1,21 @@
 import * as S from "./styles";
-const InputRadio = () => {
+
+const InputRadio = ({ title, id, value }) => {
   return (
-      <>
-        <S.TitleInputRadio>O cadastro será feito por:</S.TitleInputRadio>
-    <S.ContainerInputRadio>
-      
-
-      <S.Input type="radio" id="cpf" name="gender" value="CPF" />
-      <label for="cpf">CPF</label>
-
-      <S.Input type="radio" id="cnpj" name="gender" value="CNPJ" />
-      <label for="cnpj">CNPJ</label>
-    </S.ContainerInputRadio>
+    <>
+      {title && <S.TitleInputRadio>{title}</S.TitleInputRadio>}
+      <S.ContainerInputRadio>
+        <S.Input
+          type="radio"
+          id={id}
+          name="gender"
+          value={value}
+          required
+        />
+        <label for={id}>{id}</label>
+      </S.ContainerInputRadio>
     </>
   );
-  
 };
+
 export default InputRadio;
