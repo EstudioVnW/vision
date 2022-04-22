@@ -2,19 +2,22 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
-  margin-left: 10vw;
-  margin-top: 3vw;
-  height: 35vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
 `;
 
 export const BoxOne = styled.div`
   display: flex;
   background-color: #fff;
+  margin-left: 8rem;
+  margin-top: 5rem;
   display: flex;
   flex-wrap: wrap;
   border-radius: 40px 40px 0 40px;
-  width: 76vh;
-  margin-top: 1rem;
+  width: 46rem;
   padding: 1.5rem;
   padding-bottom: 3rem;
   border: 5px solid transparent;
@@ -25,13 +28,14 @@ export const BoxOne = styled.div`
 `;
 
 export const BoxTwo = styled.div`
-  width: 76vh;
+  width: 46rem;
   display: flex;
   background-color: white;
+  margin-left: 8rem;
   display: flex;
   border: 2px solid green;
   flex-wrap: wrap;
-  padding: 1.5rem;
+  padding: 2.5rem;
   border-radius: 40px 40px 0 40px;
   margin-top: 1rem;
   border: 5px solid transparent;
@@ -41,15 +45,34 @@ export const BoxTwo = styled.div`
   background-origin: padding-box, border-box;
 `;
 
-export const Boxthree = styled.div`
+export const BoxThree = styled.div`
   display: flex;
   background-color: white;
   display: flex;
   border: 2px solid green;
+  margin-left: 8rem;
   flex-wrap: wrap;
   padding: 1.5rem;
   border-radius: 40px 40px 0 40px;
-  width: 76vh;
+  width: 46rem;
+  margin-top: 1rem;
+  border: 5px solid transparent;
+  background: linear-gradient(to right, white, white),
+    linear-gradient(to right, #fff, #98fb98);
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+`;
+
+export const BoxFor = styled.div`
+  display: flex;
+  background-color: white;
+  display: flex;
+  border: 2px solid green;
+  margin-left: 8rem;
+  flex-wrap: wrap;
+  padding: 1.5rem;
+  border-radius: 40px 40px 0 40px;
+  width: 46rem;
   margin-top: 1rem;
   border: 5px solid transparent;
   background: linear-gradient(to right, white, white),
@@ -71,10 +94,11 @@ export const Paragraph = styled.p`
 
 export const BoxButton = styled.div`
   width: 100%;
-  margin-top: 2rem;
-  margin-left: 10vw;
+  margin-right: 5rem;
+  margin-top: 1rem;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+  height: 100vh;
 `;
 
 export const BtnCadastro = styled.button`
@@ -82,15 +106,14 @@ export const BtnCadastro = styled.button`
   background-color: #2c5fa1;
   color: #fff;
   border: none;
-  width: 16vw;
+  width: 13vw;
+  height: 9vh;
   padding: 1rem;
-  /* padding: 0 4rem 0 4rem; */
-  font-size: 30px;
+  font-size: 25px;
   display: flex;
   cursor: pointer;
   font-family: "Sf Pro Regular";
   text-transform: uppercase;
-  line-height: 36px;
   font-weight: 700;
   letter-spacing: 0.2rem;
 `;
