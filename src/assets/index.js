@@ -1,2 +1,2 @@
-// export { default as Logo } from './logo.png';
+export { default as Backg } from './backg.png';
 
