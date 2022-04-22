@@ -1,16 +1,19 @@
-import React from 'react';
-import './styles.css'
+import * as S from "./styles";
+const InputRadio = () => {
+  return (
+      <>
+        <S.TitleInputRadio>O cadastro será feito por:</S.TitleInputRadio>
+    <S.ContainerInputRadio>
+      
 
+      <S.Input type="radio" id="cpf" name="gender" value="CPF" />
+      <label for="cpf">CPF</label>
 
-function InputRadio() {
-    return(
-    
-    
-      <input type="radio" id="radio"></input>
+      <S.Input type="radio" id="cnpj" name="gender" value="CNPJ" />
+      <label for="cnpj">CNPJ</label>
+    </S.ContainerInputRadio>
+    </>
+  );
   
-    )
-    
-  }
-  
-  
-  export default InputRadio;
+};
+export default InputRadio;

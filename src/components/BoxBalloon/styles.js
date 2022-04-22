@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 100%;
+  width: 100vw;
   margin-left: 10vw;
   margin-top: 3vw;
-  height: 35vw;
+  height: 35vh;
 `;
 
 export const BoxOne = styled.div`
@@ -22,6 +22,7 @@ export const BoxOne = styled.div`
     linear-gradient(to right, #fff, #98fb98);
   background-clip: padding-box, border-box;
   background-origin: padding-box, border-box;
+  
 `;
 
 export const BoxTwo = styled.div`
