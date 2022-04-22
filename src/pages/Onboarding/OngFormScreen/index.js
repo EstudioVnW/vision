@@ -6,12 +6,27 @@ import InputRadio from '../../../components/Inputs/inputRadio';
 import * as S from './styles';
 
 const OngFormScreen = () => {
+
+  const renderCadstro = () => (
+    <div>
+      <InputRadio
+        title='O cadastro será feito por:'
+        id="cpf"
+        value="CPF"
+      />
+      <InputRadio
+        id="cnpj"
+        value="CNPJ"
+      />
+    </div>
+  );
+
   return (
     <>
-      <Header/>
+      <Header />
       <S.Main>
         <Title />
-        <InputRadio/>
+        {renderCadstro()}
       </S.Main>
     </>
   );

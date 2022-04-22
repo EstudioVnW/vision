@@ -12,6 +12,7 @@ export const ContainerInputRadio = styled.div`
   color: #2c5fa1;
   font-size: 20px;
   font-family: "Montserrat", sans-serif;
+  display: ${props => props.block ? 'block': 'inline-block'};
 `;
 
 export const Input = styled.input`
