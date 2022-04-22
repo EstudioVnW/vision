@@ -6,10 +6,10 @@ import Background from "../../../components/Background";
 
 import * as S from "./styles";
 
-const Home = () => {
+const Home = (props) => {
   return (
     <S.Container>
-      <Bemvindo />
+      <Bemvindo history={props.history} />
       <Background />
     </S.Container>
   );
