@@ -3,6 +3,10 @@ export const colors = {
   // ===========================
   black: '#000000',
 
+  // WHITE
+  // ===========================
+  white: '#fff',
+
   // BLUE
   // ===========================
   darkBlue: '#2c5fa1',
@@ -11,6 +15,10 @@ export const colors = {
   // RED
   // ===========================
   red: '#e74432',
+
+  // GREY
+  // ===========================
+  grey: '#c4c4c4',
 }
 
 export const breakpoints = {

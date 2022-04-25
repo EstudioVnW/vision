@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { colors } from '../../../styles/Theme';
 
 export const ContainerButton = styled.div`
   width: 100px;
@@ -9,7 +10,7 @@ export const ContainerButton = styled.div`
   }
 
   button {
-    color: blue;
+    color: ${colors.blue};
     background-color: #fff;
     border: none;
     padding: 2px;

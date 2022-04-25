@@ -1,0 +1,30 @@
+.divFormC{
+    display: flex;
+    flex-direction: row;
+}
+
+.Input{
+    margin-top: 10vh;
+}
+
+.row1{
+    margin-left: 10rem;
+    
+}
+
+.row2{
+    margin-left: 2rem;
+}
+
+.text2{
+    margin-top: 13vh;
+    margin-bottom: vh;
+    font-size: 30px;
+}
+
+
+.btn{
+    margin-left: 40rem;
+    margin-bottom: -3rem;
+}
+
