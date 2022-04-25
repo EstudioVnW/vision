@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { Backg } from '../../../assets';
+import { Backg } from "../../../assets";
 
 export const Container = styled.div`
   display: flex;
