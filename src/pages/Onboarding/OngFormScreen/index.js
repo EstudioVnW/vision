@@ -99,6 +99,13 @@ const OngFormScreen = () => {
       <Input
         place=" Redes Sociais"
         mask= ""
+
+    <div>
+      <InputRadio
+        title='O cadastro será feito por:'
+        label="cpf"
+        value="CPF"
+
       />
       </div> 
     </div>
@@ -122,6 +129,8 @@ const OngFormScreen = () => {
       <Input 
         place="Nome do responsável pelo cadastro"
         mask= ""
+        label="cnpj"
+        value="CNPJ"
       />
       <div className="row1">
       <Input
