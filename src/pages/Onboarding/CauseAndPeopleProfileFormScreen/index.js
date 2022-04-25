@@ -123,7 +123,7 @@ const CauseAndPeopleProfileFormScreen = () => {
        <Header />
      <S.Main>
         <Title />
-        {/* {renderOccupationArea()} */}
+        {renderOccupationArea()}
         {renderCausesOfActing()}
         {renderAssistedNumbers()}
         {/* {renderGenderOfPeople()}
