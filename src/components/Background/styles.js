@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 import Img from "../../assets/US001.png";
+import { colors } from '../../styles/Theme';
 
 export const ContainerImg = styled.div`
   width: 100%;
@@ -18,5 +19,5 @@ export const BackgIa = styled.div`
 `;
 
 export const TextVi = styled.p`
-  color: blue;
+  color: ${colors.blue};
 `;

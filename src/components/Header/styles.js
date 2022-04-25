@@ -1,10 +1,16 @@
 import styled from "styled-components";
+import { colors } from '../../styles/Theme';
 
 export const HeaderContainer = styled.div`
+  padding-left: 5px;
+  padding-bottom: 2.5rem;
   width: 100%;
   display: flex;
   align-items: center;
-  padding-left: 5px;
+`;
+
+export const ContentBtnBack = styled.div`
+  padding-left: 3.75rem;
 `;
 
 export const IconBack = styled.img`
@@ -12,7 +18,7 @@ export const IconBack = styled.img`
 `;
 
 export const Btn = styled.button`
-  color: blue;
+  color: ${colors.blue};
   padding: 2px;
   font-size: 20px;
   background-color: transparent;

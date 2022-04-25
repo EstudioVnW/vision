@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { colors } from '../../styles/Theme';
 
 export const Container = styled.div`
   width: 100%;
@@ -88,7 +89,7 @@ export const Paragraph = styled.p`
   font-style: normal;
   a {
     text-decoration: none;
-    color: blue;
+    color: ${colors.blue};
   }
 `;
 
