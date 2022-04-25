@@ -10,12 +10,16 @@ export const ContainerImg = styled.div`
 `;
 
 export const BackgIa = styled.div`
-  width: 550px;
-  height: 730px;
+  width: 650px;
+  height: 850px;
   background-size: cover;
   background-image: url(${Img});
   position: absolute;
   bottom: 0;
+  @media (max-width: 1440px) {
+    width: 610px;
+    height: 800px;
+  }
 `;
 
 export const TextVi = styled.p`
