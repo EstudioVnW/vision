@@ -28,6 +28,10 @@ export const Box = styled.div`
   @media (max-width: 1440px) {
     width: 55.5vh;
   }
+
+  @media (max-width: 1124px) {
+    width: 90%;
+  }
 `;
 
 export const BoxVi = styled.div`
