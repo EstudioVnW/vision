@@ -15,15 +15,16 @@ const Header = () => {
 
   return (
     <S.HeaderContainer>
-      <>
+      <S.ContentBtnBack>
         <S.IconBack alt="Seta" src={Seta}/>
         <S.Btn type="button" onClick={handleGoBack}>
           Voltar
         </S.Btn>
-      </>
+      </S.ContentBtnBack>
       <S.Figure>
         <S.Logo src={Logo} />
       </S.Figure>
+      <div/>
     </S.HeaderContainer>
   );
 };

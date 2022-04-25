@@ -7,15 +7,15 @@ import * as S from './styles';
 
 const OngFormScreen = () => {
 
-  const renderCadstro = () => (
+  const renderCadastro = () => (
     <div>
       <InputRadio
         title='O cadastro será feito por:'
-        id="cpf"
+        label="cpf"
         value="CPF"
       />
       <InputRadio
-        id="cnpj"
+        label="cnpj"
         value="CNPJ"
       />
     </div>
@@ -26,7 +26,7 @@ const OngFormScreen = () => {
       <Header />
       <S.Main>
         <Title />
-        {renderCadstro()}
+        {renderCadastro()}
       </S.Main>
     </>
   );
