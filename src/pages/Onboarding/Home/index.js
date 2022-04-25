@@ -13,6 +13,6 @@ const Home = (props) => {
       <Background />
     </S.Container>
   );
-}
+};
 
 export default Home;
