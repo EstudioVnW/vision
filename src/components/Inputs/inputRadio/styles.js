@@ -37,7 +37,8 @@ export const Input = styled.input`
   :checked {
     background-color: #5886ea;
     background-size: 70%;
-    background-image: url(${Checked});
+    /* background-image: url(${Checked}); */
+    background-color: ${colors.blue};
     background-repeat: no-repeat;
     background-position-x: 1.8px;
     background-position-y: 3px;

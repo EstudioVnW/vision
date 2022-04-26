@@ -30,7 +30,8 @@ export const Subtitle = styled.p`
   font-weight: 500;
 `;
 
-export const ContentCauses = styled.div`
+export const ContentInput = styled.div`
+  padding-left: .75rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 2rem;

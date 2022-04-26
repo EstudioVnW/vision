@@ -5,9 +5,17 @@ import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
 const ContainerBtn = styled.div`
-  width: 41rem;
+  width: 61.5vh; /*mesmo do boxBallon */
   margin-top: 2rem;
   display: flex;
+
+  @media (max-width: 1440px) {
+    width: 55.5vh;
+  }
+
+  @media (max-width: 1124px) {
+    width: 90%;
+  }
 `;
 
 const BoxButton = styled.div`
@@ -36,7 +44,6 @@ export default function BtnCadastro() {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    console.log("handleClick");
     navigate("/cadastro-da-organizacao");
   };
 
