@@ -1,7 +1,12 @@
 import styled from "styled-components";
 import { colors } from '../../../styles/Theme';
 
-export const Container = styled.div`
+export const Title = styled.p`
+  font-size: .75rem ;
+  color: ${colors.black};
+`;
+
+export const Content = styled.div`
   margin-right: 1rem;
   padding: .25rem .5rem;
   width: fit-content;

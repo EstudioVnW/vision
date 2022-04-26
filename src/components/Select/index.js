@@ -1,63 +1,27 @@
-import React, { useState } from "react";
-
-//Icons
-// import closeIcon from "../../assets/icon/close.svg";
-
-//Style
 import * as S from "./styles";
 
+import SelectItem from './selectItem';
+import SelectedText from './selectedText';
+
 const Select = ({
-  title,
-  subtitle,
-  // isError,
-  list,
-  itemSelected,
-  // placeholder,
-  handleSelected,
-}) => {
-  const [isModal, setIsModal] = useState(undefined);
-
-  const handleModal = (e) => {
-    e.stopPropagation();
-
-    setIsModal(!isModal);
-  };
-
-  const handleIsSelected = (item) => {
-    handleSelected(item);
-    setIsModal(false);
-  };
-
+    list,
+    selectedOccupationArea,
+    handleSelected,
+    handleRemove
+  }) => {
   return (
-    <S.ContentSelect>
-      <S.Title>
-        {title}
-        {subtitle && <S.Subtitle>{subtitle}</S.Subtitle>}
-      </S.Title>
-
-      <S.Select
-        placeholder={!!itemSelected}
-        // isError={isError}
-        onClick={handleModal}
-      >
-        {itemSelected ? itemSelected : "Click aqui!"}
-        {/* {iconArrow && (
-          <S.Icon isOpen={isModal} src={closeIcon} alt="Abrir/Fechar" />
-        )} */}
-      </S.Select>
-
-      {isModal && (
-        <S.Ul>
-          {list.map((item, i) => (
-            <S.Li key={i} onClick={() => handleIsSelected(item)}>
-              {item}
-            </S.Li>
-          ))}
-        </S.Ul>
-      )}
-
-      {/* {isError && <S.MsgError>Campo obrigatório</S.MsgError>} */}
-    </S.ContentSelect>
+    <>
+      <S.Title>Área de atuação</S.Title>
+      <SelectItem
+      title=""
+      list={list}
+      itemSelected={selectedOccupationArea}
+      handleSelected={handleSelected}
+      // isError=""
+      />
+      {selectedOccupationArea === 'Outros' && <input type='text' placeholder='Digite aqui' />}
+      {selectedOccupationArea && <SelectedText text={selectedOccupationArea} onClick={handleRemove}/>}
+    </>
   );
 };
 
