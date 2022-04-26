@@ -44,7 +44,6 @@ export default function BtnCadastro() {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    console.log("handleClick");
     navigate("/cadastro-da-organizacao");
   };
 
