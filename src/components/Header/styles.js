@@ -15,6 +15,7 @@ export const ContentBtnBack = styled.div`
 
 export const IconBack = styled.img`
   width: 20px;
+  cursor: pointer;
 `;
 
 export const Btn = styled.button`
