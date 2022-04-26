@@ -15,9 +15,9 @@ const Header = () => {
 
   return (
     <S.HeaderContainer>
-      <S.ContentBtnBack>
+      <S.ContentBtnBack onClick={handleGoBack}>
         <S.IconBack alt="Seta" src={Seta}/>
-        <S.Btn type="button" onClick={handleGoBack}>
+        <S.Btn type="button">
           Voltar
         </S.Btn>
       </S.ContentBtnBack>

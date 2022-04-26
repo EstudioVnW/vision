@@ -1,13 +1,13 @@
 import React from 'react'
-import './BtnProx.css'
 
-const BtnProx = () =>{
-    return(
-        <>
-            <a href="#"><button id="enviar">Próximo</button></a>
-        </>
-    );
+import * as S from "./styles";
 
+const BtnProx = ({ onClick }) => {
+  return (
+    
+    <S.BtnProx button onClick={onClick}>Próximo</S.BtnProx>
+    
+  );
 }
 
 export default BtnProx;

@@ -6,7 +6,7 @@ const Input = ({ mask, value, place, width, noBorder }) => {
   return (
     <S.Container>
       <S.Input
-        id="InputText"
+        id="InputText3"
         width={width}
         placeholder={place}
         mask={mask}
