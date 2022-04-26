@@ -4,7 +4,9 @@ import React, { useState } from "react";
 import Header from "../../../components/Header";
 import Title from "../../../components/Title";
 import InputRadio from "../../../components/Inputs/inputRadio";
-// import SelectedText from "../../../components/Select/selectedText";
+import InputNumber from "../../../components/Inputs/inputNumber";
+import SelectedText from "../../../components/Select/selectedText";
+import Button from "../../../components/Buttons/BtnProx/BtnProx";
 import Select from "../../../components/Select";
 import { Close } from "../../../assets";
 
@@ -96,41 +98,46 @@ const CauseAndPeopleProfileFormScreen = () => {
     <S.Content>
       <S.Title withSubtitle>Causa de atuação</S.Title>
       <S.Subtitle>É possível escolher mais de uma opção</S.Subtitle>
-      <S.ContentCauses>
+      <S.ContentInput>
         {listCauses.map((item) => (
-          <InputRadio label={item} value="CPF" />
+          <InputRadio label={item} value="" />
         ))}
-      </S.ContentCauses>
+      </S.ContentInput>
     </S.Content>
   );
 
   const renderAssistedNumbers = () => (
     <S.Content>
       <S.Title>Número de assistidos pela ONG</S.Title>
-      <S.ContentCauses width="30%">
+      <S.ContentInput width="280px">
         {listAssistedNumbers.map((item) => (
-          <InputRadio label={item} value="CPF" />
+          <InputRadio label={item} value="" />
         ))}
-      </S.ContentCauses>
+      </S.ContentInput>
+      <InputNumber />
     </S.Content>
   );
 
   const renderGenderOfPeople = () => (
     <S.Content>
       <S.Title withSubtitle>Gênero das pessoas assistidas pela ONG</S.Title>
-      <p>É possível escolher mais de uma opção</p>
-      {listGenderOfPeople.map((item) => (
-        <InputRadio label={item} value="CPF" />
-      ))}
+      <S.Subtitle>É possível escolher mais de uma opção</S.Subtitle>
+      <S.ContentInput width="345px">
+        {listGenderOfPeople.map((item) => (
+          <InputRadio label={item} value="" />
+        ))}
+      </S.ContentInput>
     </S.Content>
   );
 
   const renderFaixaEtaria = () => (
     <S.Content>
       <S.Title>Faixa etária dos assistidos</S.Title>
-      {listAge.map((item) => (
-        <InputRadio label={item} value="CPF" />
-      ))}
+      <S.ContentInput width="500px">
+        {listAge.map((item) => (
+          <InputRadio label={item} value="CPF" />
+        ))}
+      </S.ContentInput>
     </S.Content>
   );
 
@@ -142,10 +149,10 @@ const CauseAndPeopleProfileFormScreen = () => {
         {renderOccupationArea()}
         {renderCausesOfActing()}
         {renderAssistedNumbers()}
-        {/* {renderGenderOfPeople()}
-        {renderFaixaEtaria()} */}
+        {renderGenderOfPeople()}
+        {renderFaixaEtaria()}
+        <Button />
       </S.Main>
-      <p>oi</p>
     </>
   );
 };

@@ -8,3 +8,13 @@ export const Main = styled.main`
     padding-right: calc((100% - 940px)/2);
   }
 `;
+
+export const BoxCep = styled.div ` ; `
+export const BoxTeste = styled.div ` ; `
+export const Container = styled.div `  
+  width:${props=>props.width  };
+  max-width:100%;`
+export const BoxCpf = styled.div ` 
+  width:20rem;
+  border:none;
+ `

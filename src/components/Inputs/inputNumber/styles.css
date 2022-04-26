@@ -1,0 +1,60 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 0 0 .75rem;
+}
+
+.number-wrapper input:focus{
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+.number-wrapper {
+  position: relative;
+}
+
+.number-wrapper input[type="number"] {  
+  margin-top: 10px;
+  color: #0000ff;
+  text-align:center;
+  height: 30px;
+  width: 60px;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 10px;
+  border-color:#d3d3d3 ;
+  border: 1px solid #C4C4C4;
+}
+  
+/* .number-wrapper:after,
+.number-wrapper:before {
+  position: absolute;
+  right: 1px;
+  width: 1.5em;
+  height: 1em;
+  font-size: 13px;
+  pointer-events: none;
+  background: #fff;
+  padding:1.1px ;
+      
+}
+.number-wrapper:after {
+  color: #0000ff;
+  content: "\25B2";
+  margin-top: 1.48vw;
+}
+.number-wrapper:before {
+  color: #0000ff;
+  content: "\25BC";
+  margin-bottom: 5px;
+  bottom: -.5em;
+} */
+
+.text {
+  padding: .5rem 0 0 .75rem;
+  font-size: .85rem;
+  font-family: "SF Pro Regular";
+  color: #333333;
+  font-weight: 500;
+}
+ 

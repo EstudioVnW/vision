@@ -1,12 +1,19 @@
-import React from 'react'
-import './Input.css'
-import InputMask from 'react-input-mask'
+import React from "react";
+import "./Input.css";
+import * as S from "./styles";
 
-const Input = ( {mask,value, place}) => {
-    return(
-        <InputMask id="InputText"   placeholder = {place} mask={mask} value={value} />
-    );
-}
-
+const Input = ({ mask, value, place, width }) => {
+  return (
+    <S.Container>
+      <S.Input
+        id="InputText"
+        width={width}
+        placeholder={place}
+        mask={mask}
+        value={value}
+      />
+    </S.Container>
+  );
+};
 
 export default Input;
