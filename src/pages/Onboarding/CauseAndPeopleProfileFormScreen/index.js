@@ -1,21 +1,22 @@
 import React, { useState } from "react";
 
 //Components
-import Header from '../../../components/Header';
-import Title from '../../../components/Title';
-import InputRadio from '../../../components/Inputs/inputRadio';
-import InputNumber from '../../../components/Inputs/inputNumber';
-import SelectedText from '../../../components/Select/selectedText';
-import Button from '../../../components/Buttons/BtnProx/BtnProx';
-import Select from '../../../components/Select';
-import SelectItem from '../../../components/Select/selectItem';
+import Header from "../../../components/Header";
+import Title from "../../../components/Title";
+import InputRadio from "../../../components/Inputs/inputRadio";
+import InputNumber from "../../../components/Inputs/inputNumber";
+import SelectedText from "../../../components/Select/selectedText";
+import Button from "../../../components/Buttons/BtnProx/BtnProx";
+import Select from "../../../components/Select";
+import SelectItem from "../../../components/Select/selectItem";
 
-import { Close } from '../../../assets';
+import { Close } from "../../../assets";
 
 import * as S from "./styles";
 
 const CauseAndPeopleProfileFormScreen = () => {
-  const [selectedOccupationArea, setSelectedOccupationArea] = useState(undefined);
+  const [selectedOccupationArea, setSelectedOccupationArea] =
+    useState(undefined);
 
   const listCauses = [
     "Erradicação da pobreza",
@@ -67,8 +68,8 @@ const CauseAndPeopleProfileFormScreen = () => {
     setSelectedOccupationArea(item);
   };
 
-  const remover = () => {
-    setSelectedOccupationArea('');
+  const handleRemove = () => {
+    setSelectedOccupationArea("");
   };
 
   const renderOccupationArea = () => (
@@ -76,10 +77,9 @@ const CauseAndPeopleProfileFormScreen = () => {
       <Select
         list={listCauses}
         itemSelected={selectedOccupationArea}
-
         handleSelected={handleSelected}
         selectedOccupationArea={selectedOccupationArea}
-        handleRemove={remover}
+        handleRemove={handleRemove}
       />
     </S.Content>
   );

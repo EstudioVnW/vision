@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 //Icons
-// import closeIcon from "../../assets/icon/close.svg";
+import { Drop } from "../../../assets";
 
 //Style
 import * as S from "./styles";
@@ -14,6 +14,7 @@ const Select = ({
   itemSelected,
   // placeholder,
   handleSelected,
+  iconArrow,
 }) => {
   const [isModal, setIsModal] = useState(undefined);
 
@@ -41,9 +42,7 @@ const Select = ({
         onClick={handleModal}
       >
         {itemSelected ? itemSelected : "Click aqui!"}
-        {/* {iconArrow && (
-          <S.Icon isOpen={isModal} src={closeIcon} alt="Abrir/Fechar" />
-        )} */}
+        {iconArrow && <S.Icon isOpen={isModal} src={Drop} alt="Abrir/Fechar" />}
       </S.Select>
 
       {isModal && (

@@ -31,7 +31,7 @@ export const Subtitle = styled.p`
 `;
 
 export const ContentInput = styled.div`
-  padding-left: .75rem;
+  padding-left: 0.75rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 2rem;
@@ -41,7 +41,7 @@ export const ContentInput = styled.div`
 
 export const SelectedText = styled.p`
   padding-right: 0.75rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: blue;
 `;
 
