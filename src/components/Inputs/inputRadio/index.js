@@ -1,10 +1,10 @@
 import * as S from "./styles";
 
-const InputRadio = ({ title, label, value }) => {
+const InputRadio = ({ title, label, value, noBorder , inlineBlock}) => {
   return (
     <>
       {title && <S.TitleInputRadio>{title}</S.TitleInputRadio>}
-      <S.ContainerInputRadio>
+      <S.ContainerInputRadio noBorder inlineBlock>
         <S.Input
           type="radio"
           id={label}

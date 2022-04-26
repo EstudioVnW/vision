@@ -10,14 +10,14 @@ export const TitleInputRadio= styled.p`
 export const ContainerInputRadio = styled.div`
   margin-bottom:  10px;
   /* max-width: 49%; */
-  display: flex;
+  display: ${props => props.inlineBlock ? 'inline-block' : 'flex'};
   align-items: center ;
   color: #2c5fa1;
   font-size: 20px;
   font-family: "Montserrat", sans-serif;
-  /* display: ${props => props.block ? 'block': 'inline-block'}; */
+  display: ${props => props.block && 'inline-block'};
   padding: .15rem .5rem;
-  border: 1px solid ${colors.grey};
+  border: ${props => !props.noBorder && `1px solid ${colors.grey}`};
   border-radius: 5px;
 `;
 

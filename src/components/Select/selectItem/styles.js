@@ -35,7 +35,6 @@ export const Ul = styled.ul`
   color: #2c5fa1;
   display: flex;
   flex-direction: column;
-  padding: 0.563rem 0;
   width: 30rem;
   max-height: 107.5rem;
   margin-left: 2rem;
@@ -52,7 +51,7 @@ export const Ul = styled.ul`
   }
 `;
 export const Li = styled.li`
-  margin-left: 1rem;
+  padding-left: 1rem;
   padding: 0.75rem;
   color: #32517a;
   font-size: 1rem;

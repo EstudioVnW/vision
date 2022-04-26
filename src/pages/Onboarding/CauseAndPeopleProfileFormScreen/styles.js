@@ -73,3 +73,14 @@ export const BtnRemove = styled.button`
   display: flex;
   margin-left: 1.5rem;
 `;
+
+export const Footer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 50px;
+
+  div {
+    padding-bottom: 0;
+  }
+`;
