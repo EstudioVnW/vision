@@ -2,11 +2,12 @@
 import * as S from "./styles";
 import { Close } from '../../../assets';
 
-const SelectedText = ({ text }) => {
+const SelectedText = ({ text, onClick }) => {
   return (
-    <S.Container>
-      <S.Text>{text}</S.Text> <S.Img src={Close}  alt="Fechar" />
-    </S.Container>
+    <>
+      <S.Title>Você selecionou como sua área:</S.Title>
+      <S.Content><S.Text>{text}</S.Text> <S.Img src={Close} alt="Fechar" onClick={onClick} /></S.Content>
+    </>
   );
 };
 

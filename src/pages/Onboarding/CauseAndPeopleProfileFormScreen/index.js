@@ -1,19 +1,21 @@
 import React, { useState } from "react";
 
 //Components
-import Header from "../../../components/Header";
-import Title from "../../../components/Title";
-import InputRadio from "../../../components/Inputs/inputRadio";
-import InputNumber from "../../../components/Inputs/inputNumber";
-import SelectedText from "../../../components/Select/selectedText";
-import Button from "../../../components/Buttons/BtnProx/BtnProx";
-import Select from "../../../components/Select";
-import { Close } from "../../../assets";
+import Header from '../../../components/Header';
+import Title from '../../../components/Title';
+import InputRadio from '../../../components/Inputs/inputRadio';
+import InputNumber from '../../../components/Inputs/inputNumber';
+import SelectedText from '../../../components/Select/selectedText';
+import Button from '../../../components/Buttons/BtnProx/BtnProx';
+import Select from '../../../components/Select';
+import SelectItem from '../../../components/Select/selectItem';
+
+import { Close } from '../../../assets';
 
 import * as S from "./styles";
 
 const CauseAndPeopleProfileFormScreen = () => {
-  const [clicked, setClicked] = useState(true);
+  const [selectedOccupationArea, setSelectedOccupationArea] = useState(undefined);
 
   const listCauses = [
     "Erradicação da pobreza",
@@ -62,35 +64,23 @@ const CauseAndPeopleProfileFormScreen = () => {
   ];
 
   const handleSelected = (item) => {
-    setClicked(item);
+    setSelectedOccupationArea(item);
   };
 
-  const remover = (id) => {
-    setClicked(id);
+  const remover = () => {
+    setSelectedOccupationArea('');
   };
 
   const renderOccupationArea = () => (
     <S.Content>
-      <S.Title>Área de atuação</S.Title>
       <Select
-        title=""
         list={listCauses}
-        // itemSelected={selected}
+        itemSelected={selectedOccupationArea}
+
         handleSelected={handleSelected}
-
-        // onclick={handleClick}
-        // isError=""
+        selectedOccupationArea={selectedOccupationArea}
+        handleRemove={remover}
       />
-
-      <S.ParagraphSelected>Você selecionou como sua área:</S.ParagraphSelected>
-      <S.BoxText>
-        <S.BoxRemove>
-          <S.BtnRemove onClick={() => remover()}>
-            <S.ParagraphSelected>{clicked}</S.ParagraphSelected>
-            <S.ImgClose src={Close} alt="close" />
-          </S.BtnRemove>
-        </S.BoxRemove>
-      </S.BoxText>
     </S.Content>
   );
 
