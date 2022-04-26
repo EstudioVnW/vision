@@ -19,29 +19,31 @@ const OngFormScreen = () => {
       <InputRadio
         label="cnpj"
         value="CNPJ" />
-    </div><div >
+    </div>
+    <S.Container >
 
-    <div className="Input">
+    <S.BoxCpf>
       <Input 
         place=" CPF"
         mask= "999.999.999-99"
+ 
       />
-    </div>
+    </S.BoxCpf>
 
     <div className="Input divFormC ">
       <Input 
         place=" Email para contato da Ong *"
         mask= ""
       />
-      <div className="row1">
+      <S.BoxTeste className="row1">
       <Input
         place=" Ano de início das atividades *"
         mask= ""
       />
-      </div> 
+      </S.BoxTeste> 
     </div>
 
-    <div className=" Input divFormC ">
+    <S.BoxCep className=" Input divFormC ">
      <div className="l3">
       <Input 
           place=" CEP "
@@ -62,7 +64,7 @@ const OngFormScreen = () => {
         mask= ""
       />
       </div> 
-    </div>
+    </S.BoxCep>
 
     <div className=" Input divFormC ">
       <Input 
@@ -172,7 +174,7 @@ const OngFormScreen = () => {
     
 
 
-      </div></>
+    </S.Container></>
   );
 
   return (

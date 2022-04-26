@@ -1,10 +1,13 @@
 import React from 'react'
 import './Input.css'
-import InputMask from 'react-input-mask'
+import * as S from './styles'
+import styled from 'styled-components'
 
-const Input = ( {mask,value, place}) => {
+const Input = ( {mask,value, place,width}) => {
     return(
-        <InputMask id="InputText"   placeholder = {place} mask={mask} value={value} />
+        <S.Container>
+        <S.Input   id="InputText" width={width} placeholder = {place} mask={mask} value={value} />
+        </S.Container>
     );
 }
 

@@ -9,6 +9,7 @@
 
 .row1{
     margin-left: 10rem;
+    width: 20rem;
     
 }
 
@@ -28,3 +29,6 @@
     margin-bottom: -3rem;
 }
 
+.BoxTeste{
+    width: 40rem;
+}
