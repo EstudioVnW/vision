@@ -11,7 +11,6 @@ import * as S from './styles';
 const OngFormScreen = () => {
 
   const renderCadastro = () => (
-<<<<<<< HEAD
     <><div>
       <InputRadio
         title='O cadastro será feito por:'
@@ -100,13 +99,6 @@ const OngFormScreen = () => {
       <Input
         place=" Redes Sociais"
         mask= ""
-=======
-    <div>
-      <InputRadio
-        title='O cadastro será feito por:'
-        label="cpf"
-        value="CPF"
->>>>>>> d65378ee952e5ba29b94d1b5bb8c71a644b610c0
       />
       </div> 
     </div>
@@ -119,7 +111,6 @@ const OngFormScreen = () => {
         label="Sim"
         value="sim" />
       <InputRadio
-<<<<<<< HEAD
         label="Não"
         value="nao" />
 
@@ -131,10 +122,6 @@ const OngFormScreen = () => {
       <Input 
         place="Nome do responsável pelo cadastro"
         mask= ""
-=======
-        label="cnpj"
-        value="CNPJ"
->>>>>>> d65378ee952e5ba29b94d1b5bb8c71a644b610c0
       />
       <div className="row1">
       <Input
