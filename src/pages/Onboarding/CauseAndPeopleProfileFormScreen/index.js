@@ -5,12 +5,8 @@ import Header from '../../../components/Header';
 import Title from '../../../components/Title';
 import InputRadio from '../../../components/Inputs/inputRadio';
 import InputNumber from '../../../components/Inputs/inputNumber';
-import SelectedText from '../../../components/Select/selectedText';
-import Button from '../../../components/Buttons/BtnProx/BtnProx';
+import Button from '../../../components/Buttons';
 import Select from '../../../components/Select';
-import SelectItem from '../../../components/Select/selectItem';
-
-import { Close } from '../../../assets';
 
 import * as S from "./styles";
 
@@ -76,7 +72,6 @@ const CauseAndPeopleProfileFormScreen = () => {
       <Select
         list={listCauses}
         itemSelected={selectedOccupationArea}
-
         handleSelected={handleSelected}
         selectedOccupationArea={selectedOccupationArea}
         handleRemove={remover}
@@ -99,7 +94,7 @@ const CauseAndPeopleProfileFormScreen = () => {
   const renderAssistedNumbers = () => (
     <S.Content>
       <S.Title>Número de assistidos pela ONG</S.Title>
-      <S.ContentInput width="280px">
+      <S.ContentInput width="17.5rem">
         {listAssistedNumbers.map((item) => (
           <InputRadio label={item} value="" />
         ))}
@@ -112,7 +107,7 @@ const CauseAndPeopleProfileFormScreen = () => {
     <S.Content>
       <S.Title withSubtitle>Gênero das pessoas assistidas pela ONG</S.Title>
       <S.Subtitle>É possível escolher mais de uma opção</S.Subtitle>
-      <S.ContentInput width="345px">
+      <S.ContentInput width="21.563rem">
         {listGenderOfPeople.map((item) => (
           <InputRadio label={item} value="" />
         ))}
@@ -123,7 +118,7 @@ const CauseAndPeopleProfileFormScreen = () => {
   const renderFaixaEtaria = () => (
     <S.Content>
       <S.Title>Faixa etária dos assistidos</S.Title>
-      <S.ContentInput width="500px">
+      <S.ContentInput width="31.25rem">
         {listAge.map((item) => (
           <InputRadio label={item} value="CPF" />
         ))}
@@ -140,8 +135,10 @@ const CauseAndPeopleProfileFormScreen = () => {
         {renderCausesOfActing()}
         {renderAssistedNumbers()}
         {renderGenderOfPeople()}
-        {renderFaixaEtaria()}
-        <Button />
+        <S.Footer>
+          {renderFaixaEtaria()}
+          <Button />
+        </S.Footer>
       </S.Main>
     </>
   );

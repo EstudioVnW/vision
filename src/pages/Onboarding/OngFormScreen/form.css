@@ -20,7 +20,10 @@
 .text2{
     margin-top: 13vh;
     margin-bottom: vh;
-    font-size: 30px;
+    font-size: 1.075rem;
+    font-family: "SF Pro Regular";
+    color: #000000;
+    font-weight: 500;
 }
 
 

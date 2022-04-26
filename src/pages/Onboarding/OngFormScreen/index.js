@@ -18,22 +18,25 @@ const OngFormScreen = () => {
   }
 
   const renderCadastro = () => (
-    <><div>
+    <>
+    {/* <S.ContentInput width="31.25rem"> */}
       <InputRadio
         title='O cadastro será feito por:'
-        label="cpf"
-        value="CPF" />
+        label="CPF"
+        value="CPF" inlineBlock/>
       <InputRadio
-        label="cnpj"
-        value="CNPJ" />
-    </div>
-      <S.Container >
+        label="CNPJ"
+        value="CNPJ"
+        noBorder inlineBlock
+      />
+    {/* </S.ContentInput> */}
+      <S.Container>
 
         <S.BoxCpf>
           <Input
             place=" CPF"
             mask="999.999.999-99"
-
+            noBorder
           />
         </S.BoxCpf>
 
@@ -132,23 +135,23 @@ const OngFormScreen = () => {
             place="Nome do responsável pelo cadastro"
             mask=""
             label="cnpj"
-            value="CNPJ"
+            value=""
           />
           <div className="row1">
             <Input
-              place=" Cargo do responsável pelo cadastro *"
+              place="Cargo do responsável pelo cadastro *"
             />
           </div>
         </div>
 
         <div className="Input divFormC ">
           <Input
-            place=" Email"
+            place=" Email *"
             mask=""
           />
           <div className="row1">
             <Input
-              place=" Telefone Celular"
+              place=" Telefone ou Celular *"
               mask=""
             />
           </div>
