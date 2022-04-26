@@ -101,6 +101,16 @@ const OngFormScreen = () => {
       <Input
         place=" Redes Sociais"
         mask= ""
+<<<<<<< HEAD
+=======
+
+    <div>
+      <InputRadio
+        title='O cadastro será feito por:'
+        label="cpf"
+        value="CPF"
+
+>>>>>>> 00d3279c4f40b33baf5cffe79eaf28023ddb0131
       />
       </div> 
     </div>
@@ -124,6 +134,11 @@ const OngFormScreen = () => {
       <Input 
         place="Nome do responsável pelo cadastro"
         mask= ""
+<<<<<<< HEAD
+=======
+        label="cnpj"
+        value="CNPJ"
+>>>>>>> 00d3279c4f40b33baf5cffe79eaf28023ddb0131
       />
       <div className="row1">
       <Input
