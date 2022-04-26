@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { colors } from '../../../styles/Theme';
+import styled from "styled-components";
+import { colors } from "../../../styles/Theme";
 
 export const ContentSelect = styled.div`
   position: relative;
@@ -28,6 +28,7 @@ export const Select = styled.div`
   justify-content: space-between;
   border-radius: 8px;
   cursor: pointer;
+  margin-left: 2rem;
 `;
 export const Ul = styled.ul`
   margin-top: 1rem;
@@ -37,7 +38,7 @@ export const Ul = styled.ul`
   padding: 0.563rem 0;
   width: 30rem;
   max-height: 107.5rem;
-
+  margin-left: 2rem;
   background: white;
   border-radius: 5px;
   border: 1px solid ${colors.inputBorder};
@@ -73,3 +74,5 @@ export const Subtitle = styled.h3`
 export const Others = styled.div``;
 export const OthersTitle = styled.h3``;
 export const OthersInput = styled.input``;
+
+export const Icon = styled.img``;
