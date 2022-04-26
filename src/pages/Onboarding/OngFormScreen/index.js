@@ -46,12 +46,12 @@ const OngFormScreen = () => {
             place=" Email para contato da Ong *"
             mask=""
           />
-          <S.BoxTeste className="row1">
+          <S.row1>
             <Input
               place=" Ano de início das atividades *"
               mask=""
             />
-          </S.BoxTeste>
+          </S.row1>
         </S.divForm>
 
         <S.divForm >
