@@ -1,9 +1,8 @@
+import Routes from './routes/routes';
 
-function App() {
+const App = () => {
   return (
-   <div>
-     <p>vision</p>
-   </div>
+    <Routes />
   );
 }
 
